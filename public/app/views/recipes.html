@@ -1,0 +1,14 @@
+<h1>Secret Recipes</h1>
+
+<a href="/recipes/new" class="btn btn-success">New Recipe</a>
+
+<div class="form-group">
+  <label for="search">Search</label>
+  <input type="text" class="form-control" id="search" ng-model="search">
+</div>
+
+<div class="well" ng-repeat="recipe in recipes | filter:{title:search} track by recipe._id">
+  <h1>{{recipe.title}}</h1>
+  <a ng-href="/recipes/{{recipe._id}}">Permalink</a>
+  <a ng-click="deleteRecipe(recipe._id, $index)" class="btn btn-danger glyphicon glyphicon-trash pull-right"></a>
+</div>

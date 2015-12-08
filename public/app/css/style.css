@@ -1,0 +1,27 @@
+body {
+	background-image:url("http://orig07.deviantart.net/d03e/f/2008/148/c/3/wood_floor_by_gnrbishop.jpg");
+	font-family: 'Raleway', sans-serif;
+}
+
+/*.navbar {
+	font-weight: bold;
+	font-color: #009900;
+	text-align: center;
+}*/
+
+
+.well {
+	background-color: #ffffcc;
+	border: 1px solid black;
+	margin: 30px;
+}
+
+.container {
+	margin: 30px;
+	padding: 20px;
+    background-color: #ffffff;
+}
+
+.btn {
+	font-size: 14px;
+}
